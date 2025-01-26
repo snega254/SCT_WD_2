@@ -1,0 +1,97 @@
+/* Global Styles */
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.stopwatch-container {
+  text-align: center;
+  background: #1e2a38;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+  width: 350px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #00d2ff;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+/* Timer Display */
+#timer {
+  font-size: 3rem;
+  margin: 20px 0;
+  padding: 15px 30px;
+  background: rgba(0, 210, 255, 0.1);
+  border: 2px solid #00d2ff;
+  border-radius: 10px;
+  font-weight: bold;
+  color: #00d2ff;
+  letter-spacing: 2px;
+}
+
+/* Buttons */
+.buttons-container {
+  margin-top: 20px;
+}
+
+button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: white;
+  background: #00d2ff;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 5px 20px rgba(0, 210, 255, 0.6);
+}
+
+button:disabled {
+  background: #6b6b6b;
+  cursor: not-allowed;
+}
+
+/* Lap Section */
+.lap-container {
+  margin-top: 20px;
+  padding: 15px;
+  background: #253544;
+  border-radius: 10px;
+  max-height: 200px;
+  overflow-y: auto;
+  border: 1px solid #00d2ff;
+}
+
+.lap-container p {
+  margin: 5px 0;
+  font-weight: bold;
+  color: #00d2ff;
+}
+
+/* Scrollbar Styling */
+.lap-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.lap-container::-webkit-scrollbar-thumb {
+  background: #00d2ff;
+  border-radius: 10px;
+}
